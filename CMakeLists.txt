@@ -1,12 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
-project(tinytemplate)
+project(cjinja)
 
-set(CMAKE_CXX_STANDARD 14)
-
+set(TEST_NAME cjinja_test)
 add_subdirectory(deps/ejson)
 include_directories(. deps/ejson/include)
 
-add_library(${PROJECT_NAME} tinytemplate.cpp)
-add_executable(tinytemplate_test tinytemplate.cpp test/test.cpp)
+add_library(${PROJECT_NAME} cjinja.cpp)
 
-target_link_libraries(tinytemplate_test ejson)
+add_executable(${TEST_NAME} cjinja.cpp test/test.cpp)
+target_link_libraries(${TEST_NAME} ejson)
