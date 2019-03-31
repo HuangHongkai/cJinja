@@ -182,7 +182,7 @@ namespace cJinja {
 
         // if表达式解析
         // abcd==efgh 匹配出abcd和efgh
-        const regex EQUAL_REGEX(R"(([\w"\[\]\.\+\*/\-]+)(==|<|>)([\w"\[\]\.\+\*/\-]+))");
+        const regex EQUAL_REGEX(R"(([\w"\[\]\.\+\*/\-]+)(==|<|>|!=)([\w"\[\]\.\+\*/\-]+))");
 
         // !abcdef 匹配出abcdef
         const regex NOT_REGEX(R"(!([\w"\[\]\.\+\*/\-]+))");
