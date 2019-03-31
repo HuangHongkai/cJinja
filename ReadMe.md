@@ -2,7 +2,7 @@
 
 cJinja 是一个使用cpp编写的轻量html模版解析库，依赖 [ejson](https://github.com/HuangHongkai/ejson) (https://github.com/HuangHongkai/ejson) 来实现模版的数据替换（在jinja中称为context，上下文）。模版的语法基本与django jinja一致，功能还算丰富。源码仅有700行，适合学习，觉得不错的点个star吧。
 
-
+（该程序为 https://github.com/HuangHongkai/tinyserver 中的一个模块）
 
 ### 编译
 
